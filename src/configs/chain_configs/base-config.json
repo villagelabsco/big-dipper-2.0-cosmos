@@ -39,10 +39,10 @@
       "matomoSiteID":""
     },
     "style": {
-      "themes": {
-        "default": "light",
-        "themeList": ["light", "dark", "deuteranopia", "tritanopia"],
-        "light": {
+      "default": "light",
+      "themes": [
+        {
+          "type": "light",
           "background": {
             "default": "#F8F8F8",
             "paper": "#FFFFFF",
@@ -96,7 +96,8 @@
             "five": "#9F46EC"
           }
         },
-        "dark": {
+        {
+          "type": "dark",
           "background": {
             "default": "#0A0A0A",
             "paper": "#131316",
@@ -104,7 +105,7 @@
             "surfaceTwo": "#19191D"
           },
           "primary": {
-            "main": "Color('#FD3B4C').alpha(0.7).string()",
+            "main": "#FD3B4C",
             "contrastText": "#fff"
           },
           "divider": "#3D3D43",
@@ -150,6 +151,6 @@
             "five": "#9F46EC"
           }
         }
-      }
+      ]
     }
   }

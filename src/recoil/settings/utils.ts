@@ -1,9 +1,9 @@
 import {
-  lightTemplate,
   themeDictionary,
 } from '@styles';
 import {
   chainConfig,
+  themeList,
 } from '@configs';
 import {
   Theme,
@@ -13,7 +13,7 @@ import {
 // CONSTANTS
 // ================================
 
-export const THEME_LIST: Theme[] = chainConfig.style.themes.themeList as Theme[];
+export const THEME_LIST: Theme[] = themeList as Theme[];
 
 export const THEME_DICTIONARY = themeDictionary;
 
@@ -21,7 +21,9 @@ export const getThemeTemplate = (theme: Theme) => {
   if (THEME_DICTIONARY[theme]) {
     return THEME_DICTIONARY[theme];
   }
-  return lightTemplate;
+
+  const defaultTheme = chainConfig.style.default;
+  return THEME_DICTIONARY[defaultTheme];
 };
 
 export const DATE_LIST = [
