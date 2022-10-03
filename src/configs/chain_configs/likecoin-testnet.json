@@ -1,6 +1,6 @@
 {
   "title": "LikeCoin Block Explorer",
-  "network": "likecoin-mainnet-2",
+  "network": "likecoin-public-testnet-3",
   "icon": "/likecoin/images/likecoin/icon.svg",
   "logo": {
     "default": "/likecoin/images/likecoin/logo.svg"
@@ -14,15 +14,15 @@
     "time": "2021-07-13T08:00:00",
     "height": 1
   },
-  "primaryTokenUnit": "nanolike",
+  "primaryTokenUnit": "nanoekil",
   "votingPowerTokenUnit": "ulike",
   "tokenUnits": {
-    "nanolike": {
-      "display": "like",
+    "nanoekil": {
+      "display": "ekil",
       "exponent": 9
     },
     "ulike": {
-      "display": "like",
+      "display": "ekil",
       "exponent": 6
     }
   },
@@ -30,9 +30,9 @@
     "profile": true
   },
   "endpoints": {
-    "graphql":"https://gql.likecoin.forbole.com/v1/graphql",
-    "graphqlWebsocket":"wss://gql.likecoin.forbole.com/v1/graphql",
-    "publicRpcWebsocket":"wss://rpc.likecoin.forbole.com/websocket"
+    "graphql":"https://gql-ws-testnet.likecoin.forbole.com/v1/graphql",
+    "graphqlWebsocket":"wss://gql-ws-testnet.likecoin.forbole.com/v1/graphql",
+    "publicRpcWebsocket":"wss://ws-testnet.likecoin.forbole.com"
   },
   "general": {
     "basePath": "/likecoin",
@@ -43,10 +43,10 @@
     "matomoSiteID":"9"
   },
   "style": {
-    "themes": {
-      "default": "light",
-      "themeList": ["light", "deuteranopia", "tritanopia"],
-      "light": {
+    "default": "light",
+    "themes": [
+      {
+        "type": "light",
         "background": {
           "default": "#F8F8F8",
           "paper": "#FFFFFF",
@@ -99,61 +99,7 @@
           "four": "#F2A46B",
           "five": "#C975F0"
         }
-      },
-      "dark": {
-        "background": {
-          "default": "#",
-          "paper": "#",
-          "surfaceOne": "#",
-          "surfaceTwo": "#"
-        },
-        "primary": {
-          "main": "#",
-          "contrastText": "#"
-        },
-        "divider": "#",
-        "text": {
-          "primary": "#",
-          "secondary": "#"
-        },
-        "fonts": {
-          "fontOne": "#",
-          "fontTwo": "#",
-          "fontThree": "#",
-          "fontFour": "#",
-          "fontFive": "#",
-          "highlight": "#"
-        },
-        "primaryData": {
-          "one": "#",
-          "two": "#",
-          "three": "#",
-          "four": "#"
-        },
-        "results": {
-          "pass": "#",
-          "fail": "#"
-        },
-        "tokenomics": {
-          "one": "#",
-          "two": "#",
-          "three": "#"
-        },
-        "condition": {
-          "zero": "#",
-          "one": "#",
-          "two": "#",
-          "three": "#"
-        },
-        "charts": {
-          "zero": "#",
-          "one": "#",
-          "two": "#",
-          "three": "#",
-          "four": "#",
-          "five": "#"
-        }
       }
-    }
+    ]
   }
 }

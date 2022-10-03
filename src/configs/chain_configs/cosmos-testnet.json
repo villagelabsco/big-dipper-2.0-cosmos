@@ -1,6 +1,6 @@
 {
   "title": "Cosmos Block Explorer",
-  "network": "cosmoshub-4",
+  "network": "theta-testnet-001",
   "icon": "/cosmos/images/cosmos/icon.svg",
   "logo": {
     "default": "/cosmos/images/cosmos/logo.svg"
@@ -26,9 +26,9 @@
     "profile": true
   },
   "endpoints": {
-    "graphql":"https://gql.cosmos.forbole.com/v1/graphql",
-    "graphqlWebsocket":"wss://gql.cosmos.forbole.com/v1/graphql",
-    "publicRpcWebsocket":"wss://rpc.cosmoshub.forbole.com/websocket"
+    "graphql":"https://gql-testnet.cosmos.forbole.com/v1/graphql",
+    "graphqlWebsocket":"wss://gql-testnet.cosmos.forbole.com/v1/graphql",
+    "publicRpcWebsocket":"wss://rpc-testnet.cosmos.forbole.com/websocket"
   },
   "general": {
     "basePath": "/cosmos",
@@ -39,64 +39,10 @@
     "matomoSiteID":"4"
   },
   "style": {
-    "themes": {
-      "default": "dark",
-      "themeList": ["dark", "deuteranopia", "tritanopia"],
-      "light": {
-        "background": {
-          "default": "#",
-          "paper": "#",
-          "surfaceOne": "#",
-          "surfaceTwo": "#"
-        },
-        "primary": {
-          "main": "#",
-          "contrastText": "#"
-        },
-        "divider": "#",
-        "text": {
-          "primary": "#",
-          "secondary": "#"
-        },
-        "fonts": {
-          "fontOne": "#",
-          "fontTwo": "#",
-          "fontThree": "#",
-          "fontFour": "#",
-          "fontFive": "#",
-          "highlight": "#"
-        },
-        "primaryData": {
-          "one": "#",
-          "two": "#",
-          "three": "#",
-          "four": "#"
-        },
-        "results": {
-          "pass": "#",
-          "fail": "#"
-        },
-        "tokenomics": {
-          "one": "#",
-          "two": "#",
-          "three": "#"
-        },
-        "condition": {
-          "zero": "#",
-          "one": "#",
-          "two": "#",
-          "three": "#"
-        },
-        "charts": {
-          "zero": "#",
-          "one": "#",
-          "two": "#",
-          "three": "#",
-          "four": "#",
-          "five": "#"
-        }
-      },
-      "dark": {
+    "default": "dark",
+    "themes": [
+      {
+        "type": "dark",
         "background": {
           "default": "#020202",
           "paper": "#191B26",
@@ -150,6 +96,6 @@
           "five": "#C25396"
         }
       }
-    }
+    ]
   }
 }

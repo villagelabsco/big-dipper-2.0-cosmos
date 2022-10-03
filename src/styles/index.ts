@@ -2,7 +2,7 @@ import * as R from 'ramda';
 import { ThemeOptions } from '@material-ui/core/styles';
 import { chainConfig } from '@configs';
 import { ThemeDictionaryType } from './types';
-import { common } from './common_setup';
+import { common } from './common';
 
 const getThemeDictionary = () => {
   const themeDict: ThemeDictionaryType = {};
@@ -24,7 +24,7 @@ const getThemeDictionary = () => {
         },
       },
       palette: {
-        type: 'light',
+        type,
         primary: {
           main: primary.main,
           contrastText: primary.contrastText,
