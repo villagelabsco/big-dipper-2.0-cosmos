@@ -75,10 +75,10 @@ jest.mock('@configs', () => ({
       "matomoSiteID":"8"
     },
     "style": {
-      "themes": {
-        "default": "light",
-        "themeList": ["light", "dark", "deuteranopia", "tritanopia"],
-        "light": {
+      "default": "light",
+      "themes": [
+        {
+          "type": "light",
           "background": {
             "default": "#F8F8F8",
             "paper": "#FFFFFF",
@@ -132,61 +132,7 @@ jest.mock('@configs', () => ({
             "five": "#9F46EC"
           }
         },
-        "dark": {
-          "background": {
-            "default": "#0A0A0A",
-            "paper": "#131316",
-            "surfaceOne": "#131316",
-            "surfaceTwo": "#19191D"
-          },
-          "primary": {
-            "main": "Color('#FD3B4C').alpha(0.7).string()",
-            "contrastText": "#fff"
-          },
-          "divider": "#3D3D43",
-          "text": {
-            "primary": "#E6E6E6",
-            "secondary": "#AAAAAB"
-          },
-          "fonts": {
-            "fontOne": "#E6E6E6",
-            "fontTwo": "#AAAAAB",
-            "fontThree": "#818181",
-            "fontFour": "#999999",
-            "fontFive": "#FFFFFF",
-            "highlight": "#1D86FF"
-          },
-          "primaryData": {
-            "one": "#af2929",
-            "two": "#b44516",
-            "three": "#b14237",
-            "four": "#b16919"
-          },
-          "results": {
-            "pass": "#198a65",
-            "fail": "#b12a34"
-          },
-          "tokenomics": {
-            "one": "#1EC490",
-            "two": "#497BFF",
-            "three": "#9F46EC"
-          },
-          "condition": {
-            "zero": "#E8E8E8",
-            "one": "#1EC490",
-            "two": "#FF961B",
-            "three": "#FF608A"
-          },
-          "charts": {
-            "zero": "#E8E8E8",
-            "one": "#EB3AA4",
-            "two": "#497BFF",
-            "three": "#FF961B",
-            "four": "#1EC490",
-            "five": "#9F46EC"
-          }
-        }
-      }
+      ]
     }
   },
   generalConfig: {

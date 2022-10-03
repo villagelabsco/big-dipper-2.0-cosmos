@@ -13,7 +13,7 @@ import {
 // CONSTANTS
 // ================================
 
-export const THEME_LIST: Theme[] = themeList as Theme[];
+export const THEME_LIST = themeList as Theme[];
 
 export const THEME_DICTIONARY = themeDictionary;
 
