@@ -1,6 +1,8 @@
 # Unreleased
 
 ## Changes
+
+# # akash-v1.3.0 - 2022-11-03
 - Merged base
 - Updated preview image
 - Added mainnet ([\981](https://github.com/forbole/big-dipper-2.0-cosmos/issues/981))
